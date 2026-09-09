@@ -11,14 +11,13 @@ class Solution:
         if l == -1:
             return
 
-
-        r = l + 1
-
-        while r < len(nums):
-
+        for r in range( l + 1 , len(nums)):
             if nums[r] != 0:
                 nums[l] , nums[r] = nums[r] , nums[l]
                 l += 1
-            r += 1
+
+
+            
+            
        
         
